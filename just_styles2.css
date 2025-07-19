@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/* RESET + BASE */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #2b3c58, #2d3c51, #617486);
+  font-family: Verdana, Arial, sans-serif;
+  color: gold;
+}
+
+/* Layout container */
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* -- HEADER + BANNER -- */
+header {
+  width: 100%;
+  background: linear-gradient(to right, #2b3c58, #2d3c51, #617486);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.banner-container {
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --navigation-- */
+.horizontalNavigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 0;
+  list-style: none;
+}
+
+.horizontalNavigation li {
+  flex: 1 1 auto;
+  max-width: 200px;
+  text-align: center;
+}
+
+.horizontalNavigation a {
+  display: block;
+  padding: 0.5em 1em;
+  font-family: monospace;
+  font-size: 1.1em;
+  color: gold;
+  background-color: #2d3c51;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.horizontalNavigation a:hover {
+  background-color: #617486;
+}
+
+/*  font + size */
+h1 {
+  font-size: 2em;
+  font-family: monospace;
+  letter-spacing: 0.2em;
+  color: gold;
+}
+
+h2, h3 {
+  font-family: 'Palatino Linotype', serif;
+  margin-bottom: 4rem;
+}
+
+/* sections and content */
+article.intro,
+section.h2
+ {
+  background-color: white;
+  margin: 1rem 0;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  max-width: 960px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+aside.Resources {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+  align-self: start;
+   width: 100%;
+   height: fit-content
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+p {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+article.intro,
+section.h2 article {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+
+.left-column {
+   padding: 0;
+   margin: 0;
+   width: 0;
+   max-width: 100%;
+   
+}
+.left-column > * {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+article.intro h2 {
+   display: block;
+   margin-bottom: 1.5rem;
+}
+article.intro img {
+   display:block;
+   margin-top: 1.5rem;
+   padding: 1rem;
+   border-radius: 6px;
+
+}
+/* ---- footer ---- */
+footer {
+  margin-top: auto;
+  background-color: #2b3c58;
+  color: gold;
+  text-align: center;
+  padding: 1rem 0;
+}
