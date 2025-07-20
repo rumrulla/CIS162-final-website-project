@@ -130,8 +130,8 @@ article {
 }
 article img {
     display: block;
-    grid-template-columns: repeat(2fr, 1fr);
-    box-shadow: #2b3c58;
+   
+   
     box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
     border-radius: 6px
     
