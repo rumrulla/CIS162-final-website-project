@@ -12,11 +12,6 @@ html {background-image: linear-gradient(to right, #2b3c58, #2d3c51, #617486);
 }
 
 
-
-
-  
-
-
 body {
     background-image: linear-gradient(to right, #2b3c58, #2d3c51, #617486);
     font-family: Verdana, Arial, sans-serif;
@@ -27,14 +22,14 @@ body {
     min-height: 100vh;
    
 }
+/* Beccas css
 body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: 
         "header header"
-        "intro intro"
-        "article articles"
-        "aside resources"
+        "article article"
+        "aside aside"
         "footer footer";
     column-gap: 15px;
     
@@ -52,8 +47,32 @@ header {
 
 body > article { grid-area: intro;}
 body > aside {grid-area: resources;}
-body > section {grid-area: articles;}
+body > section {grid-area: article;}
 body > footer {grid-area: footer;}
+/*
+/* My css  ends on line 72*/
+body {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-template-areas: "header  header"
+                        "intro    faq"
+                        
+                        "footer   footer";  
+   grid-column-gap: 15px;
+}
+
+body > header {
+   grid-row: 1;
+   grid-column: 1/-1;
+    
+}
+
+
+
+body > article {grid-area: intro;}
+body > aside {grid-area: faq;}
+body > footer {grid-area: footer;}
+
 
 body > header > nav li {
     width: 40%;
@@ -148,7 +167,7 @@ aside {
 
 }
 
-aside.resources  {
+aside  {
     color: gold;
     font-size: 1.2em;
     line-height: 1.5em; 
