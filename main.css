@@ -1,16 +1,16 @@
-header, article,article, aside,figcaption,figure,footer,header,main,nav,section, 
+header, article, article, aside, figcaption, figure, footer, header, main, nav, section, 
 div, dl, dt, dd, em, h1, h2, h3, h4, header, html, img, li, main, nav,
- ol,ul, p, section, span {
+ol,ul, p, section, span {
     background: transparent;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
     box-sizing: border-box;
 }
-html {background-image: linear-gradient(to right, #2b3c58, #2d3c51, #617486);
-    
-}
 
+html {
+    background-image: linear-gradient(to right, #2b3c58, #2d3c51, #617486);
+}
 
 body {
     background-image: linear-gradient(to right, #2b3c58, #2d3c51, #617486);
@@ -19,42 +19,41 @@ body {
     margin-right: auto;
     line-height: 1;
     width: 100%;
-    min-height: 100vh;
-   
+    min-height: 100vh; 
 }
 
 body {
    display: grid;
    grid-template-columns: 2fr 1fr;
-   grid-template-areas: "header  header"
-                        "intro    faq"
-                        
-                        "footer   footer";  
+   grid-template-areas: 
+      "header  header"
+      "intro    faq"
+      "footer   footer";  
    grid-column-gap: 15px;
 }
 
 body > header {
    grid-row: 1;
-   grid-column: 1/-1;
-    
+   grid-column: 1/-1;  
 }
 
-
-
-body > article {grid-area: intro;}
-body > aside {grid-area: faq;}
-body > footer {grid-area: footer;}
-
+body > article { grid-area: intro; }
+body > aside { grid-area: faq; }
+body > footer { grid-area: footer; }
 
 body > header > nav li {
     width: 40%;
 }
+
 header h1 {
     margin-bottom: 0;
     text-align: center;
     background-color: #2d3c51;
 }
-h1 {color: gold;}
+
+h1 {
+    color: gold;
+}
 
 nav {
     display: inline-block;
@@ -62,6 +61,7 @@ nav {
     margin: 0 auto;
     text-align: center;
 }
+
 .horizontalNavigation ul {
     display: flex;
     justify-content: center;
@@ -80,8 +80,8 @@ nav ul li {
 nav li {
     display: block;
     float: left;
-
 }
+
 nav a {
     text-decoration: none;
     display: block;
@@ -90,6 +90,7 @@ nav a {
     font-size: 1.5em;
     line-height: 1.9em;
 }
+
 .horizontalNavigation a {
   display: block;
   padding: 0.5rem 1rem;
@@ -99,9 +100,11 @@ nav a {
   border-radius: 4px;
   text-decoration: none;
 }
+
 nav a:link, nav a:visited {
     color: gold;
 }
+
 nav a:hover {
     background-color: #617486;
 }
@@ -110,12 +113,15 @@ article p {
     font-size: 1em;
     line-height: 1.5em;
 }
-section> h2 {color: gold;
+
+section> h2 {
+    color: gold;
     font-size: 1.5em;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
     padding: 1.5em;
 }
+
 article {
     padding: 1.5em;
     background-color: #2d3c51;
@@ -123,20 +129,16 @@ article {
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
+
 article img {
     display: block;
-   
-   
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
     border-radius: 6px
-    
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 
 aside {
     color: #2d3c51;
     margin-top: 50px;
-   
-
 }
 
 aside  {
@@ -144,24 +146,21 @@ aside  {
     font-size: 1.2em;
     line-height: 1.5em; 
     padding: 1.5em;
-
 }
-
 
 footer {
     clear: left;
     margin-top: 50px;
-  
     font-size: 1.2em;
     line-height: 1.5em;
     padding: 1.5em;
-    
-
 }
-footer {text-align: center;
+
+footer {
+    text-align: center;
     background-image: linear-gradient(to right, #2b3c58, #2d3c51, #617486);
     color: gold;
     padding: 1em;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
+}
