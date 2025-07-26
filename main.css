@@ -1,16 +1,16 @@
-header, article, article, aside, figcaption, figure, footer, header, main, nav, section, 
+header, article,article, aside,figcaption,figure,footer,header,main,nav,section, 
 div, dl, dt, dd, em, h1, h2, h3, h4, header, html, img, li, main, nav,
-ol,ul, p, section, span {
+ ol,ul, p, section, span {
     background: transparent;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
     box-sizing: border-box;
 }
-
-html {
-    background-image: linear-gradient(to right, #2b3c58, #2d3c51, #617486);
+html {background-image: linear-gradient(to right, #2b3c58, #2d3c51, #617486);
+    
 }
+
 
 body {
     background-image: linear-gradient(to right, #2b3c58, #2d3c51, #617486);
@@ -19,41 +19,70 @@ body {
     margin-right: auto;
     line-height: 1;
     width: 100%;
-    min-height: 100vh; 
+    min-height: 100vh;
+   
 }
+/* Beccas css
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "article article"
+        "aside aside"
+        "footer footer";
+    column-gap: 15px;
+    
+    
+}   
+body > header {
+    grid-row: 1;
+    grid-column: 1 / -1;   
+}
+header { 
+    display: block;
+    width:100%;}
+ 
 
+
+body > article { grid-area: intro;}
+body > aside {grid-area: resources;}
+body > section {grid-area: article;}
+body > footer {grid-area: footer;}
+/*
+/* My css  ends on line 72*/
 body {
    display: grid;
    grid-template-columns: 2fr 1fr;
-   grid-template-areas: 
-      "header  header"
-      "intro    faq"
-      "footer   footer";  
+   grid-template-areas: "header  header"
+                        "intro    faq"
+                        
+                        "footer   footer";  
    grid-column-gap: 15px;
 }
 
 body > header {
    grid-row: 1;
-   grid-column: 1/-1;  
+   grid-column: 1/-1;
+    
 }
 
-body > article { grid-area: intro; }
-body > aside { grid-area: faq; }
-body > footer { grid-area: footer; }
+
+
+body > article {grid-area: intro;}
+body > aside {grid-area: faq;}
+body > footer {grid-area: footer;}
+
 
 body > header > nav li {
     width: 40%;
 }
-
 header h1 {
     margin-bottom: 0;
     text-align: center;
     background-color: #2d3c51;
 }
-
-h1 {
-    color: gold;
-}
+h1 {color: #0df091;}
 
 nav {
     display: inline-block;
@@ -61,7 +90,6 @@ nav {
     margin: 0 auto;
     text-align: center;
 }
-
 .horizontalNavigation ul {
     display: flex;
     justify-content: center;
@@ -80,8 +108,8 @@ nav ul li {
 nav li {
     display: block;
     float: left;
-}
 
+}
 nav a {
     text-decoration: none;
     display: block;
@@ -90,21 +118,18 @@ nav a {
     font-size: 1.5em;
     line-height: 1.9em;
 }
-
 .horizontalNavigation a {
   display: block;
   padding: 0.5rem 1rem;
   font-family: monospace;
-  color: gold;
+  color: #0df091;
   background: #2d3c51;
   border-radius: 4px;
   text-decoration: none;
 }
-
 nav a:link, nav a:visited {
-    color: gold;
+    color: #0df091;
 }
-
 nav a:hover {
     background-color: #617486;
 }
@@ -113,54 +138,161 @@ article p {
     font-size: 1em;
     line-height: 1.5em;
 }
-
-section> h2 {
-    color: gold;
+section> h2 {color: #0df091;
     font-size: 1.5em;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
     padding: 1.5em;
 }
-
 article {
     padding: 1.5em;
     background-color: #2d3c51;
-    color: gold;
+    color: #0df091;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
-
 article img {
     display: block;
-    border-radius: 6px
+   
+   
     box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    border-radius: 6px
+    
 }
 
 aside {
     color: #2d3c51;
     margin-top: 50px;
+   
+
 }
 
 aside  {
-    color: gold;
+    color: #0df091;
     font-size: 1.2em;
     line-height: 1.5em; 
     padding: 1.5em;
+
 }
+/* Forms         */
+
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 7
+   Tutorial Case
+
+   Survey Forms Style Sheet
+   Author: 
+   Date:   
+
+   Filename:         rb_forms.css
+
+*/
+
+form#contact {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+form#contact > fieldset {
+    background: linear-gradient(to right, #2b3c58, #2d3c51, #617486);
+    border-radius: 20px;
+    flex: 1 1 300px;
+    font-size: 0.85em;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Form Layout Styles */
+div.formRow{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+}
+
+div.formRow > * {
+    flex: 1 1 150px;
+}
+
+/* Legend Styles */
+
+legend {
+    background-color: #2d3c51;
+    color: #8f818f;
+    padding: 5px;
+}
+
+/* Text Area Styles */
+
+textarea {
+    margin-top: 10px
+    auto: 100px
+    
+    
+}
+
+
+/* Form Button Styles */
+
+input[type=text], select, textarea {
+  background-color: #2d3c51;
+  color: #8f818f;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background-color: Black;
+  color: red;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Validation Styles */
+
+
 
 footer {
     clear: left;
     margin-top: 50px;
+  
     font-size: 1.2em;
     line-height: 1.5em;
     padding: 1.5em;
-}
+    
 
-footer {
-    text-align: center;
+}
+footer {text-align: center;
     background-image: linear-gradient(to right, #2b3c58, #2d3c51, #617486);
-    color: gold;
+    color: #0df091;
     padding: 1em;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
+    }
