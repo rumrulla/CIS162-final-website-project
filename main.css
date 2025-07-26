@@ -220,7 +220,7 @@ legend {
 
 textarea {
     margin-top: 10px;
-    auto: 100px;
+    margin-bottom: auto;
     
     
 }
