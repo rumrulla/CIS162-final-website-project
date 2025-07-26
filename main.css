@@ -66,6 +66,8 @@ h1 {color: #0df091;}
 
 .banner-container {
   width: 100%;
+ max-width: 1920px;
+ margin: 0 auto;
 }
 
 .banner-img {
