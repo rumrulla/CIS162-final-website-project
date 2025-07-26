@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Price of Technology</title>
+
+    <link rel="stylesheet" href="main.css" />
+   
+  </head>
+
+ <body>
+  <header>
+    <img src="circlelogo.png" alt="JUST TECH" class="banner-img" />
+    <nav class="horizontalNavigation">
+      <ul>
+         <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Tech</a></li>
+        <li><a href="#">Market</a></li>
+        <li><a href="#">Advocacy</a></li>
+        <li><a href="#">Contact</a></li>
+        <script src="jt_formsubmit.js"></script>
+      </ul>
+    </nav>
+      <br>
+        <img src="microchip.png" alt="Robot building chips" />
+        <br>
+    <h1>Have a Topic for Just Tech to Explore?</h1>
+  </header>
+
+  
+   
+        <!-- removed main and section tags since they were not deifined in the css -->
+      <article> <!-- removed class here too. The grid setup is not considered classes-->
+    
+        <h2>Let the Communication Roll!</h2>
+<p>  
+We know that some of these topics range from mundane to other-worldly, but they all have one thing in common, technology comes with a lot of information thereby, laden with details.  Because
+this website explores a broad range of topic within tech, we invite you to reach out if there is a topic you want us to expand on or usher in a new topic to explore.         
+Please provide the following information and we will put you in touch with the right person.  Before you hit that submit button, use the text box to add as much detail possible specifically related to your topic.  Thanks a bunch!  
+
+ </p>
+
+  <form id="contact" action="http://www.example.com/justtech/contact" method="post"> 
+        <fieldset id="contactUs">
+        <legend></legend>
+
+
+	 <div class="formRow">
+            
+           <label for="What is your Topic">What is your Topic</label>
+    <select name="topic" id="topic">
+      <option value="">Select a Topic</option>
+      <option value="Adware Tracking">Adware Tracking</option>
+      <option value="Sound Technology">Sound Technology</option>
+      <option value="Big Data">Big Data</option>
+      <option value="Bot Detection">Bot Detection</option>
+      <option value="Data Mining">Data Mining</option>
+    </select>
+    
+    </div>
+	
+
+	<div class="formRow">
+		<label for="fname">First Name</label>
+         		 <input name="fname" id="fname" type="text"/>
+	</div>
+
+	<div class="formRow">
+		<label for="lname">Last Name</label>
+         		 <input name="lname" id="lname" type="text"/>
+	</div>
+
+<div class="formRow">
+          <label for="city">City</label>
+            <input name="custCity" id="city" type="text"/>
+        </div>    
+            
+        <div class="formRow">
+            
+           <label for="state">State</label>
+            <input name="custState" id="state" type="text" />
+         </div>   
+            
+        <div class="formRow">
+            
+            <label for="zip">Postal Code</label>
+            <input name="custZip" id="zip" type="text" placeholder="12345" (-1234)” />
+          </div>  
+
+
+
+	<div class="formRow">
+            
+            <label for="phone">Phone Number</label>
+            <input name="custPhone" id="phone" type="text" placeholder="(123)456-7891" />
+          </div>  
+
+	<div class="formRow">
+            
+            <label for="mail">Email*</label>
+            <input name="custEmail" id="mail" type="text" />
+          </div> 
+                 
+	<div class="formRow">
+		<label for="conName">Company/Organization</label>
+         		 <input name="conName" id="conName" type="text" placeholder="Company or Organization" />
+	</div>
+	<label for="commBox">Tell us more about your experience!</label>
+            <textarea name="commentbox" id="commBox"></textarea>
+
+	
+	<div id="buttons">
+                <input type="submit" value="Submit" />
+                <input type="reset"  value="Reset" />         
+                       </div>
+        </fieldset>        
+ </form> 
+  
+       
+</article>
+      <!--Removed the multiple sections and articles. Just need one article and  one aside to crete the columns-->
+     
+    <aside>
+      <h3>Registration Information</h3>
+        
+        <form id="contact" action="http://www.example.com/justtech/contact" method="post">
+        <fieldset id="regInfo">
+            <br>
+            <legend></legend>
+            
+        <div class="formRow">
+		<label for="fname">First Name</label>
+         		 <input name="fname" id="fname" type="text"/>
+	</div>
+
+	<div class="formRow">
+		<label for="lname">Last Name</label>
+         		 <input name="lname" id="lname" type="text"/>
+	</div>
+
+<div class="formRow">
+          <label for="city">City</label>
+            <input name="custCity" id="city" type="text"/>
+        </div>    
+            
+        <div class="formRow">
+            
+           <label for="state">State</label>
+            <input name="custState" id="state" type="text" />
+         </div>   
+            
+        <div class="formRow">
+            
+            <label for="zip">Postal Code</label>
+            <input name="custZip" id="zip" type="text" placeholder="12345 (-1234)" />
+          </div>  
+
+
+
+	<div class="formRow">
+            
+            <label for="phone">Phone Number</label>
+            <input name="custPhone" id="phone" type="text" placeholder="(123)456-7891" />
+          </div>  
+
+	<div class="formRow">
+            
+            <label for="mail">Email*</label>
+            <input name="custEmail" id="mail" type="text" />
+          </div> 
+                 
+	<div class="formRow">
+		<label for="conName">Company/Organization</label>
+         		 <input name="conName" id="conName" type="text" placeholder="Company or Organization" />
+	</div>
+        <div id="buttons">
+                <input type="submit" value="Submit" />
+                        
+        </div>    
+            
+        </fieldset>
+     </form>
+      
+    </aside>
+        
+
+  <footer>
+
+   Just Tech &copy; 2025 All Rights Reserved
+       
+</footer>
+</body>
+
+</html>
