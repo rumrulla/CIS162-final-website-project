@@ -22,35 +22,7 @@ body {
     min-height: 100vh;
    
 }
-/* Beccas css
-body {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-        "header header"
-        "article article"
-        "aside aside"
-        "footer footer";
-    column-gap: 15px;
-    
-    
-}   
-body > header {
-    grid-row: 1;
-    grid-column: 1 / -1;   
-}
-header { 
-    display: block;
-    width:100%;}
- 
 
-
-body > article { grid-area: intro;}
-body > aside {grid-area: resources;}
-body > section {grid-area: article;}
-body > footer {grid-area: footer;}
-/*
-/* My css  ends on line 72*/
 body {
    display: grid;
    grid-template-columns: 2fr 1fr;
