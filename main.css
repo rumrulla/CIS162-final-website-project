@@ -84,9 +84,25 @@ header h1 {
 }
 h1 {color: #0df091;}
 
+.logo-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.banner-container {
+  width: 100%;
+}
+
 .banner-img {
-  margin-left: 20px;
-  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 nav {
