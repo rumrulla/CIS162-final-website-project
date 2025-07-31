@@ -133,7 +133,7 @@ article p {
     font-size: 1em;
     line-height: 1.5em;
 }
-.accordion {
+article > accordian-item > accordion {
  --bs-accordion-btn-bg: #2d3c51;
  --bs-accordion-active-bg: #606060;
  --bs-accordion-active-color: #ffffff;
