@@ -134,12 +134,24 @@ article p {
     line-height: 1.5em;
 }
 article > accordian-item > accordion {
- --bs-accordion-btn-bg: #2d3c51;
+ --bs-accordion-btn-bg: #808080;
  --bs-accordion-active-bg: #606060;
  --bs-accordion-active-color: #ffffff;
  --bs-accordion-btn-focus-box-shadow: none;
  --bs-accordion-bg: #2d3c51;
  --bs-accordion-color: #ffffff;
+ --bs-accordion-btn-focus-border-color: unset;
+}
+.accordion-button:not(.collapsed) {
+ box-shadow: none;
+}
+.accordion-button{
+ border-top: 1px solid lightgrey;
+}
+
+.accordion-item:last-child .accordion-button.collapsed,
+.accordion-item:last-child .accordion-body {
+ border-bottom: 1px solid lightgreay;
 }
 
 section> h2 {color: #0df091;
