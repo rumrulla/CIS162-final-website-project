@@ -180,6 +180,13 @@ aside  {
     padding: 1.5em;
 }
 
+aside > vstack {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-self: stretch;
+}
+
 /* Forms         */
 
 
