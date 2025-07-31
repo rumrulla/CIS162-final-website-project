@@ -185,6 +185,7 @@ aside > vstack {
   flex: 1 1 auto;
   flex-direction: column;
   align-self: stretch;
+ color: purple;
 }
 
 /* Forms         */
