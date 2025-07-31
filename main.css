@@ -133,6 +133,14 @@ article p {
     font-size: 1em;
     line-height: 1.5em;
 }
+.accordion {
+ --bs-accordion-btn-bg: #2d3c51;
+ --bs-accordion-active-bg: #606060;
+ --bs-accordion-active-color: #ffffff;
+ --bs-accordion-btn-focus-box-shadow: none;
+ --bs-accordion-bg: #2d3c51;
+ --bs-accordion-color: #ffffff;
+}
 
 section> h2 {color: #0df091;
     font-size: 1.5em;
@@ -170,18 +178,6 @@ aside  {
 /* Forms         */
 
 
-/*
-   New Perspectives on HTML5 and CSS3, 8th Edition
-   Tutorial 7
-   Tutorial Case
-
-   Survey Forms Style Sheet
-   Author: 
-   Date:   
-
-   Filename:         rb_forms.css
-
-*/
 
 form#contact {
     display: flex;
