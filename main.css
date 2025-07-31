@@ -142,9 +142,7 @@ article > accordian-item > accordion {
  --bs-accordion-color: #ffffff;
  --bs-accordion-btn-focus-border-color: unset;
 }
-.accordion-button:not(.collapsed) {
- box-shadow: none;
-}
+
 
 
 section> h2 {color: #0df091;
