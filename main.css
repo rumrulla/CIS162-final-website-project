@@ -178,6 +178,14 @@ aside  {
     padding: 1.5em;
 }
 
+nav a:link {
+   color: #FFD900;
+}
+
+nav a:link, nav a:visited {
+    color: #FF00A6;
+}
+
 aside > vstack {
   display: flex;
   flex: 1 1 auto;
