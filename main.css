@@ -179,11 +179,11 @@ aside  {
 }
 
 nav a:link {
-   color: #FFD900;
+   color:  #F3A516;
 }
 
 nav a:link, nav a:visited {
-    color: #FF00A6;
+    color:  #F3A516;
 }
 
 aside > vstack {
